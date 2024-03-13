@@ -1,0 +1,714 @@
+/*********************************
+ 1 固定ページ
+*********************************/
+.page-content {
+  margin-top: -0.5%;
+}
+
+/* PC用 */
+@media screen and (min-width: 768px) {
+  /*********************************
+  1.1 メインビジュアル
+  *********************************/
+  .page-front-title {
+    color: #0F1419;
+    text-shadow: 2px 1px #ffffff;
+    font-family: "Noto Sans JP";
+    font-size: 3.5vw;
+    letter-spacing: 1vw;
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    transform: translateX(-50%);
+  }
+
+  .page-back-title {
+    color: #B5B5B5;
+    font-family: "Noto Sans JP";
+    font-size:3.5vw;
+    letter-spacing: 0.5vw;
+    position: absolute;
+    top: 51%;
+    left: 22%;
+    transform: translateX(-50%);
+  }
+
+  /*********************************
+  2 お問合わせ
+  *********************************/
+  .form {
+    width: 100%;
+    background-color: #ffffff; 
+  }
+
+  .form-title {
+    background-color:#38A1DB;
+    text-align: center;
+    padding: 2%;
+  }
+
+  .form-title-sp {
+    display: none;
+  }
+
+  .form-title-first {
+    font-size: 2vw;
+    letter-spacing: 0.5vw;
+    font-weight: bold;
+    color:#ffffff;
+    text-decoration: underline;
+    padding-bottom: 1%;
+  }
+
+  .form-title-text {
+    color:#ffffff;
+    font-size: 1.5vw;
+  }
+
+  .inquiry-table {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .table-label {
+    display: block;
+    width: 100%;
+    padding-top: 5%
+  }
+
+  .table-label p {
+    font-family: "Noto Sans JP";
+    font-size: 1.5vw;
+    color: #0F1419;
+    white-space: nowrap;
+  }
+
+  .table-label span {
+    color: red;
+    padding-left: 1%;
+  }
+
+  .table-text input {
+    width: 100%;
+    border: none;
+    font-family: "Noto Sans JP";
+    font-size: 2vw;
+    color: #0F1419;
+    background-color: #F8F8F8;
+    padding: 1.5%
+  }
+
+  .inquly-table ::placeholder{
+    color: #989898;
+  }
+
+  textarea {
+    width: 100%;
+    border: none;
+    font-family: "Noto Sans JP";
+    font-size: 2vw;
+    color: #0F1419;
+    background-color: #F8F8F8;
+    padding: 1.5%;
+  }
+
+  .form-btn {
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .form-btn input {
+    display: block;
+    border: none;
+    font-family: "Noto Sans JP";
+    font-size: 2.3vw;
+    font-weight: bold;
+    color: #0F1419;
+    background-color: #D0C030;
+    text-decoration: underline;
+    padding: 1.5%;
+    margin: 5% auto;
+    box-shadow: 2px 2px #6A6A6A;
+  }
+
+  .wpcf7-submit:hover {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+  }
+
+  .recaptcha {
+    font-size: 1vw;
+    color: #0F1419;
+  }
+
+  .recaptcha a {
+    color: #0F1419;
+  }
+
+  .recaptcha a:hover,
+  .recaptcha a:visited,
+  .recaptcha a:active,
+  .recaptcha a:link {
+    color: #0F1419;
+  }
+
+  .grecaptcha-badge { 
+    visibility: hidden;
+  }
+
+  /*********************************
+  3 会社情報
+  *********************************/
+  .company-section {
+    color: #38A1DB;
+    font-family: "Noto Sans JP";
+    font-size: 2vw;
+    font-weight: bold;
+    text-shadow: 1px 1px #0f3255;
+    padding-bottom: 3%;
+  }
+
+  .office-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .office-group {
+    width: 25%;
+    background-color: #ffffff;
+    padding: 2%;
+  }
+
+  .office-title {
+    font-family: "Noto Sans JP";
+    font-size: 2vw;
+    font-weight: bold;
+    padding-bottom: 1%;
+  }
+
+  .office-text {
+    font-family: "Noto Sans JP";
+    font-size: 1.5vw;
+    padding-left: 10%;
+  }
+
+  .company-table{
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .company-table tr {
+    display: flex;
+    margin-bottom: 2%;
+    width: 100%;
+  }
+
+  .table-left {
+    display:block;
+    width:20%;
+    font-family: "Noto Sans JP";
+    font-size: 1.8vw;
+    color: #0F1419;
+    border-bottom: 1.5px solid #0F1419;
+  }
+
+  .table-right {
+    display:block;
+    width:80%;
+    font-family: "Noto Sans JP";
+    font-size: 1.8vw;
+    padding-left: 2%;
+    color: #0F1419;
+    border-bottom: 1px solid #0F1419;
+  }
+
+  /*********************************
+  4 お知らせ一覧
+  *********************************/
+  #news-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+
+  #news-menu a {
+    font-family: "Noto Sans JP";
+    font-weight: bold;
+    font-size: 2vw;
+    color: #0F1419;
+  }
+
+  #news-menu a:hover,
+  #news-menu a:active {
+    color: #0F1419;
+  }
+
+  #news-menu a:visited,
+  #news-menu a:link {
+    color: #0F1419;
+  }
+
+  .event-a,
+  .ple-a {
+    text-decoration: none;
+  }
+
+  .news-one {
+    width: 90%;
+    background-color: #ffffff;
+    padding: 2%;
+    margin: 0 auto 5% auto;
+  }
+
+  .news-one a {
+    width: 100%;
+    text-decoration: none;
+    color: #0F1419;
+    display: flex;
+  }
+
+  .news-one a:hover,
+  .news-one a:visited,
+  .news-one a:active,
+  .news-one a:link {
+    color: #0F1419;
+  }
+
+  .news-one-title {
+    width: 50%;
+    font-family: "Noto Sans JP";
+    font-size: 1.8vw;
+    font-weight: bold;
+    color: #0F1419;
+  }
+
+  .news-one-date-set {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0 0 0 auto;
+  }
+
+  .news-one-img {
+    display: inline-block;
+    width: 10%;
+    text-align: right;
+  }
+
+  .news-one-img > img{
+    width: 100%;
+    vertical-align: bottom;
+  }
+
+  .news-one-date {
+    width: 60%;
+    display: inline-block;
+    font-family: "Noto Sans JP";
+    font-size: 1.5vw;
+    color: #0F1419;
+    text-align: right;
+  }
+
+  .news-event {
+    display: none;
+  }
+  .news-pre-release {
+    display: none;
+  }
+
+  /*********************************
+  5 プライバシーポリシー
+  *********************************/
+  #privacy {
+    width: 90%;
+    color: #0F1419;
+    margin: 0 auto;
+  }
+
+  #privacy h1 {
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin: 5% 0;
+  }
+
+  #privacy h2 {
+    font-size: 2.3vw;
+    font-weight: bold;
+    border-bottom: 2px solid #38A1DB;
+    margin: 3% 0;
+  }
+
+  #privacy p {
+    font-size: 1.8vw;
+  }
+
+  #privacy div {
+    width: 95%;
+    margin: 0 0 0 auto;
+  }
+  #privacy li {
+    font-size: 1.8vw;
+  }
+
+  .end {
+    text-align: right;
+    margin-bottom: 5%;
+  }
+}
+
+/* スマホ用 */
+@media screen and (max-width: 767px) {
+  /*********************************
+  1.1 メインビジュアル
+  *********************************/
+  .page-front-title {
+    color: #0F1419;
+    text-shadow: 1px 1px #ffffff;
+    font-family: "Noto Sans JP";
+    font-size: 6vw;
+    letter-spacing: 1vw;
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .page-back-title {
+    color: #B5B5B5;
+    font-family: "Noto Sans JP";
+    font-size:6vw;
+    letter-spacing: 0.5vw;
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /*********************************
+  2 お問合わせ
+  *********************************/
+  .form {
+    width: 100%;
+    background-color: #ffffff; 
+  }
+
+  .form-title {
+    display: none;
+  }
+
+  .form-title-sp {
+    background-color:#38A1DB;
+    text-align: center;
+    padding: 2%;
+  }
+
+  .form-title-first {
+    font-size: 4.5vw;
+    letter-spacing: 0.5vw;
+    font-weight: bold;
+    color:#ffffff;
+    text-decoration: underline;
+    padding-bottom: 1%;
+  }
+
+  .form-title-text {
+    color:#ffffff;
+    font-size: 4vw;
+  }
+
+  .inquiry-table {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .table-label {
+    display: block;
+    width: 100%;
+    padding-top: 5%
+  }
+
+  .table-label p {
+    font-family: "Noto Sans JP";
+    font-size: 3.5vw;
+    color: #0F1419;
+    white-space: nowrap;
+  }
+
+  .table-label span {
+    color: red;
+    padding-left: 1%;
+  }
+
+  .table-text input {
+    width: 100%;
+    border: none;
+    font-family: "Noto Sans JP";
+    font-size: 4vw;
+    color: #0F1419;
+    background-color: #F8F8F8;
+    padding: 1.5%
+  }
+
+  .inquly-table ::placeholder{
+    color: #989898;
+  }
+
+  textarea {
+    width: 100%;
+    border: none;
+    font-family: "Noto Sans JP";
+    font-size: 4vw;
+    color: #0F1419;
+    background-color: #F8F8F8;
+    padding: 1.5%;
+  }
+
+  .form-btn {
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .form-btn input {
+    display: block;
+    border: none;
+    font-family: "Noto Sans JP";
+    font-size: 4.5vw;
+    font-weight: bold;
+    color: #0F1419;
+    background-color: #D0C030;
+    text-decoration: underline;
+    padding: 3%;
+    margin: 5% auto;
+    box-shadow: 2px 2px #6A6A6A;
+  }
+
+  .wpcf7-submit:hover {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+  }
+
+  .recaptcha {
+    font-size: 2vw;
+    color: #0F1419;
+  }
+
+  .recaptcha a {
+    color: #0F1419;
+  }
+
+  .recaptcha a:hover,
+  .recaptcha a:visited,
+  .recaptcha a:active,
+  .recaptcha a:link {
+    color: #0F1419;
+  }
+
+  .grecaptcha-badge { 
+    visibility: hidden;
+  }
+
+  /*********************************
+  3 会社情報
+  *********************************/
+  .company-section {
+    color: #38A1DB;
+    font-family: "Noto Sans JP";
+    font-size: 5vw;
+    font-weight: bold;
+    text-shadow: 1px 1px #0f3255;
+    margin: 5% 0;
+    text-align: center;
+  }
+
+  .office-content {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .office-group {
+    background-color: #ffffff;
+    padding: 2%;
+    margin: 3% 0;
+  }
+
+  .office-title {
+    font-family: "Noto Sans JP";
+    font-size: 4.2vw;
+    font-weight: bold;
+    padding-bottom: 1%;
+  }
+
+  .office-text {
+    font-family: "Noto Sans JP";
+    font-size: 3.8vw;
+    padding-left: 5%;
+  }
+
+  .company-table{
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .company-table tr {
+    display: flex;
+    margin-bottom: 2%;
+    width: 100%;
+  }
+
+  .table-left {
+    display:block;
+    width:35%;
+    font-family: "Noto Sans JP";
+    font-size: 4vw;
+    color: #0F1419;
+    border-bottom: 1.5px solid #0F1419;
+  }
+
+  .table-right {
+    display:block;
+    width:65%;
+    font-family: "Noto Sans JP";
+    font-size: 4vw;
+    padding-left: 2%;
+    color: #0F1419;
+    border-bottom: 1px solid #0F1419;
+  }
+
+  /*********************************
+  4 お知らせ一覧
+  *********************************/
+  #news-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+
+  #news-menu a {
+    font-family: "Noto Sans JP";
+    font-weight: bold;
+    font-size: 4.2vw;
+    color: #0F1419;
+  }
+
+  #news-menu a:hover,
+  #news-menu a:active {
+    color: #0F1419;
+  }
+
+  #news-menu a:visited,
+  #news-menu a:link {
+    color: #0F1419;
+  }
+
+  .event-a,
+  .ple-a {
+    text-decoration: none;
+  }
+
+  .news-one {
+    width: 90%;
+    background-color: #ffffff;
+    padding: 2%;
+    margin: 0 auto 5% auto;
+  }
+
+  .news-one a {
+    width: 100%;
+    text-decoration: none;
+    color: #0F1419;
+    display: flex;
+  }
+
+  .news-one a:hover,
+  .news-one a:visited,
+  .news-one a:active,
+  .news-one a:link {
+    color: #0F1419;
+  }
+
+  .news-one-title {
+    width: 60%;
+    font-family: "Noto Sans JP";
+    font-size: 4vw;
+    font-weight: bold;
+    color: #0F1419;
+  }
+
+  .news-one-date-set {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0 0 0 auto;
+  }
+
+  .news-one-img {
+    display: inline-block;
+    width: 15%;
+    text-align: right;
+  }
+
+  .news-one-img > img{
+    width: 100%;
+    vertical-align: bottom;
+  }
+
+  .news-one-date {
+    width: 70%;
+    display: inline-block;
+    font-family: "Noto Sans JP";
+    font-size: 3vw;
+    color: #0F1419;
+    text-align: right;
+  }
+
+  .news-event {
+    display: none;
+  }
+  .news-pre-release {
+    display: none;
+  }
+
+  /*********************************
+  5 プライバシーポリシー
+  *********************************/
+  #privacy {
+    width: 90%;
+    color: #0F1419;
+    margin: 0 auto;
+  }
+
+  #privacy h1 {
+    font-size: 4.5vw;
+    font-weight: bold;
+    margin: 5% 0;
+  }
+
+  #privacy h2 {
+    font-size: 4vw;
+    font-weight: bold;
+    border-bottom: 2px solid #38A1DB;
+    margin: 6% 0;
+  }
+
+  #privacy p {
+    font-size: 3.5vw;
+  }
+
+  #privacy div {
+    width: 95%;
+    margin: 0 0 0 auto;
+  }
+  #privacy li {
+    font-size: 3.5vw;
+  }
+
+  .end {
+    text-align: right;
+    margin-bottom: 5%;
+  }
+}   
