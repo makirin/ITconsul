@@ -101,6 +101,8 @@
             'post_type' =>  'post',
             // 1ページに表示する投稿数
             'posts_per_page' => 3,
+            // 更新順
+            'orderby' => 'modified',
           );
           // データの取得
           $posts = get_posts($args);
@@ -111,7 +113,8 @@
           <div class="news-set">
             <a href="<?php the_permalink(); ?>">
               <div class="news-title">
-                <?php the_title(); ?>
+              <?php  $title = wp_trim_words( get_the_title() ,  9, '...'); ?>
+                <?php  echo $title; ?>
               </div>
               <div class="news-text">
                 <?php  $content = wp_trim_words( get_the_content() ,  25, '...'); ?>

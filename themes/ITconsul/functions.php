@@ -1,6 +1,6 @@
 <?php
+//page用のCSS
 function page_styles() {
-  //page用のCSS
   if (is_page(array('inquiry', 'company-info', 'news', 'privacy'))) {
     wp_enqueue_style('page-style', get_template_directory_uri() . '/styles/page-style.css',array(), '1.0.0');
   }
@@ -18,8 +18,28 @@ add_action('wp_enqueue_scripts', 'my_script');
 
 // recaptcha
 add_action('wp_enqueue_scripts', function() {
-$page_list = [
-  'inquiry', //お問合せフォーム
-];
-if (is_page($page_list)) return;
-wp_deregister_script('google-recaptcha');}, 100);
+  if (is_page(array('inquiry'))) return; 
+    wp_deregister_script('google-recaptcha');
+  }, 100);  
+
+// 投稿更新日順表示
+function post_modified($query) {
+  if ($query -> is_main_query()) {
+    $query -> set('orderby', 'modified');
+  }
+}
+
+add_action('pre_get_posts', 'post_modified');
+
+// お問合せバリデーション
+add_filter('wpcf7_validate', 'wpcf7_validate_spam_message', 10, 2 );
+function wpcf7_validate_spam_message( $result, $tag ) {
+$value = str_replace(array(PHP_EOL,''), "", esc_attr($_POST['your-message']));
+if (!empty($value)) {
+if (preg_match('/[$ !-. :-? $ $]/', $value)) {
+$result['valid'] = false;
+$result['reason'] = array('your-message' => '記号は入力できません');
+}
+}
+return $result;
+}

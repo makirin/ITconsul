@@ -31,6 +31,7 @@
     top: 51%;
     left: 22%;
     transform: translateX(-50%);
+    white-space: nowrap;
   }
 
   /*********************************
@@ -52,54 +53,59 @@
   }
 
   .form-title-first {
+    display: inline-block;
     font-size: 2vw;
-    letter-spacing: 0.5vw;
+    letter-spacing: 0.2vw;
     font-weight: bold;
     color:#ffffff;
-    text-decoration: underline;
-    padding-bottom: 1%;
+    border-bottom: 1.5px solid #ffffff;
+    margin-bottom: 1%;
   }
 
   .form-title-text {
     color:#ffffff;
     font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    line-height: 2vw;
   }
 
-  .inquiry-table {
+  .form-container {
     width: 90%;
     margin: 0 auto;
+    overflow: hidden;
   }
 
-  .table-label {
+  .label {
     display: block;
     width: 100%;
-    padding-top: 5%
-  }
-
-  .table-label p {
+    padding-top: 5%;
+    padding-bottom: 1%;
     font-family: "Noto Sans JP";
     font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    background-color: #ffffff;
     color: #0F1419;
     white-space: nowrap;
   }
 
-  .table-label span {
+  .label span {
     color: red;
     padding-left: 1%;
   }
 
-  .table-text input {
-    width: 100%;
+  .wpcf7-text {
+    width: 95%;
+    background-color: #F8F8F8;
     border: none;
     font-family: "Noto Sans JP";
     font-size: 2vw;
+    letter-spacing: 0.2vw;
     color: #0F1419;
-    background-color: #F8F8F8;
-    padding: 1.5%
+    padding: 2% 4%;
   }
 
-  .inquly-table ::placeholder{
-    color: #989898;
+  .wpcf7-text:focus-visible {
+    outline: none;
   }
 
   textarea {
@@ -107,14 +113,15 @@
     border: none;
     font-family: "Noto Sans JP";
     font-size: 2vw;
+    letter-spacing: 0.2vw;
+    line-height: 2.5vw;
     color: #0F1419;
     background-color: #F8F8F8;
-    padding: 1.5%;
+    padding: 2% 4%;
   }
 
-  .form-btn {
-    width: 100%;
-    background-color: #ffffff;
+  textarea:focus-visible {
+    outline: none;
   }
 
   .form-btn input {
@@ -124,9 +131,9 @@
     font-size: 2.3vw;
     font-weight: bold;
     color: #0F1419;
-    background-color: #D0C030;
+    background-color:#f1db1d;
     text-decoration: underline;
-    padding: 1.5%;
+    padding: 1.5% 3%;
     margin: 5% auto;
     box-shadow: 2px 2px #6A6A6A;
   }
@@ -137,8 +144,10 @@
   }
 
   .recaptcha {
-    font-size: 1vw;
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
     color: #0F1419;
+    margin-top: 4%;
   }
 
   .recaptcha a {
@@ -163,9 +172,11 @@
     color: #38A1DB;
     font-family: "Noto Sans JP";
     font-size: 2vw;
+    letter-spacing: 0.2vw;
     font-weight: bold;
     text-shadow: 1px 1px #0f3255;
     padding-bottom: 3%;
+    white-space: nowrap;
   }
 
   .office-content {
@@ -177,12 +188,13 @@
   .office-group {
     width: 25%;
     background-color: #ffffff;
-    padding: 2%;
+    padding: 3%;
   }
 
   .office-title {
     font-family: "Noto Sans JP";
     font-size: 2vw;
+    letter-spacing: 0.2vw;
     font-weight: bold;
     padding-bottom: 1%;
   }
@@ -190,6 +202,8 @@
   .office-text {
     font-family: "Noto Sans JP";
     font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    line-height: 2vw;
     padding-left: 10%;
   }
 
@@ -209,6 +223,7 @@
     width:20%;
     font-family: "Noto Sans JP";
     font-size: 1.8vw;
+    letter-spacing: 0.2vw;
     color: #0F1419;
     border-bottom: 1.5px solid #0F1419;
   }
@@ -218,6 +233,7 @@
     width:80%;
     font-family: "Noto Sans JP";
     font-size: 1.8vw;
+    letter-spacing: 0.2vw;
     padding-left: 2%;
     color: #0F1419;
     border-bottom: 1px solid #0F1419;
@@ -233,26 +249,40 @@
     padding-bottom: 5%;
   }
 
-  #news-menu a {
+  .info-a,
+  .ple-a,
+  .event-a {
+    display: inline-block;
     font-family: "Noto Sans JP";
     font-weight: bold;
     font-size: 2vw;
+    letter-spacing: 0.2vw;
     color: #0F1419;
-  }
-
-  #news-menu a:hover,
-  #news-menu a:active {
-    color: #0F1419;
-  }
-
-  #news-menu a:visited,
-  #news-menu a:link {
-    color: #0F1419;
-  }
-
-  .event-a,
-  .ple-a {
     text-decoration: none;
+  }
+
+  .info-a:hover,
+  .event-a:hover,
+  .ple-a:hover {
+    border-bottom: 1px solid #0F1419;
+    color: #0F1419;
+  }
+
+
+  .info-a:visited,
+  .info-a:active,
+  .info-a:link,
+  .event-a:visited,
+  .event-a:active,
+  .event-a:link,
+  .ple-a:visited,
+  .ple-a:active,
+  .ple-a:link {
+    color: #0F1419;
+  }
+
+  .active {
+    border-bottom: 2px solid #38A1DB;
   }
 
   .news-one {
@@ -267,6 +297,7 @@
     text-decoration: none;
     color: #0F1419;
     display: flex;
+    align-items: flex-end;
   }
 
   .news-one a:hover,
@@ -277,37 +308,20 @@
   }
 
   .news-one-title {
-    width: 50%;
+    width: 70%;
     font-family: "Noto Sans JP";
     font-size: 1.8vw;
+    letter-spacing: 0.2vw;
     font-weight: bold;
     color: #0F1419;
   }
 
-  .news-one-date-set {
-    width: 30%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin: 0 0 0 auto;
-  }
-
-  .news-one-img {
-    display: inline-block;
-    width: 10%;
-    text-align: right;
-  }
-
-  .news-one-img > img{
-    width: 100%;
-    vertical-align: bottom;
-  }
-
   .news-one-date {
-    width: 60%;
+    width: 30%;
     display: inline-block;
     font-family: "Noto Sans JP";
-    font-size: 1.5vw;
+    font-size: 1.2vw;
+    letter-spacing: 0.1vw;
     color: #0F1419;
     text-align: right;
   }
@@ -315,7 +329,7 @@
   .news-event {
     display: none;
   }
-  .news-pre-release {
+  .news-press-release {
     display: none;
   }
 
@@ -329,20 +343,24 @@
   }
 
   #privacy h1 {
-    font-size: 2.5vw;
+    font-size: 2.3vw;
+    letter-spacing: 0.2vw;
     font-weight: bold;
     margin: 5% 0;
   }
 
   #privacy h2 {
-    font-size: 2.3vw;
+    font-size: 2vw;
+    letter-spacing: 0.2vw;
     font-weight: bold;
     border-bottom: 2px solid #38A1DB;
     margin: 3% 0;
   }
 
   #privacy p {
-    font-size: 1.8vw;
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    line-height: 2vw;
   }
 
   #privacy div {
@@ -350,7 +368,8 @@
     margin: 0 0 0 auto;
   }
   #privacy li {
-    font-size: 1.8vw;
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
   }
 
   .end {
@@ -385,6 +404,7 @@
     top: 76%;
     left: 50%;
     transform: translateX(-50%);
+    white-space: nowrap;
   }
 
   /*********************************
@@ -406,82 +426,104 @@
   }
 
   .form-title-first {
+    display: inline-block;
     font-size: 4.5vw;
-    letter-spacing: 0.5vw;
+    letter-spacing: 0.4vw;
     font-weight: bold;
     color:#ffffff;
-    text-decoration: underline;
-    padding-bottom: 1%;
+    border-bottom: 1.5px solid #ffffff;
+    padding: 5% 5% 2% 5%;
+    margin-bottom: 3%;
   }
 
   .form-title-text {
     color:#ffffff;
-    font-size: 4vw;
+    font-size: 3.5vw;
+    letter-spacing: 0.3vw;
+    line-height: 4vw;
+    padding-bottom: 5%;
   }
 
-  .inquiry-table {
+  .form-container {
     width: 90%;
     margin: 0 auto;
+    overflow: hidden;
   }
 
-  .table-label {
+  .label {
     display: block;
     width: 100%;
-    padding-top: 5%
-  }
-
-  .table-label p {
+    padding-top: 5%;
+    padding-bottom: 1%;
     font-family: "Noto Sans JP";
-    font-size: 3.5vw;
+    font-size: 3vw;
+    letter-spacing: 0.3vw;
+    background-color: #ffffff;
     color: #0F1419;
     white-space: nowrap;
   }
 
-  .table-label span {
+  .label span {
     color: red;
     padding-left: 1%;
   }
 
-  .table-text input {
-    width: 100%;
+  .wpcf7-text {
+    width: 95%;
+    background-color: #F8F8F8;
     border: none;
     font-family: "Noto Sans JP";
     font-size: 4vw;
+    letter-spacing: 0.4vw;
     color: #0F1419;
-    background-color: #F8F8F8;
-    padding: 1.5%
+    padding: 3% 5%;
   }
 
-  .inquly-table ::placeholder{
-    color: #989898;
+  .wpcf7-text:focus-visible {
+    outline: none;
+  }
+
+  .wpcf7-text::placeholder {
+    font-size: 3.5vw;
+    letter-spacing: 0.3vw;
+    color:#6A6A6A;
   }
 
   textarea {
-    width: 100%;
+    width: 95%;
     border: none;
     font-family: "Noto Sans JP";
     font-size: 4vw;
+    letter-spacing: 0.4vw;
+    line-height: 4.5vw;
     color: #0F1419;
     background-color: #F8F8F8;
-    padding: 1.5%;
+    padding: 3% 5%;
   }
 
-  .form-btn {
-    width: 100%;
-    background-color: #ffffff;
+  textarea:focus-visible {
+    outline: none;
+  }
+
+  .textarea::placeholder {
+    font-size: 3.5vw;
+    letter-spacing: 0.3vw;
+    line-height: 4vw;
+    color:#6A6A6A;
   }
 
   .form-btn input {
     display: block;
     border: none;
     font-family: "Noto Sans JP";
-    font-size: 4.5vw;
+    font-size: 4vw;
+    letter-spacing: 0.4vw;
     font-weight: bold;
     color: #0F1419;
-    background-color: #D0C030;
+    background-color:#f1db1d;
     text-decoration: underline;
-    padding: 3%;
-    margin: 5% auto;
+    padding: 3% 5%;
+    margin: 10% auto 0 auto;
     box-shadow: 2px 2px #6A6A6A;
   }
 
@@ -491,8 +533,11 @@
   }
 
   .recaptcha {
-    font-size: 2vw;
+    font-size: 2.5vw;
+    letter-spacing: 0.2vw;
+    line-height: 3vw;
     color: #0F1419;
+    margin-top: 4%;
   }
 
   .recaptcha a {
@@ -517,6 +562,7 @@
     color: #38A1DB;
     font-family: "Noto Sans JP";
     font-size: 5vw;
+    letter-spacing: 0.5vw;
     font-weight: bold;
     text-shadow: 1px 1px #0f3255;
     margin: 5% 0;
@@ -530,13 +576,14 @@
 
   .office-group {
     background-color: #ffffff;
-    padding: 2%;
-    margin: 3% 0;
+    padding: 4% 5%;
+    margin: 8% 0;
   }
 
   .office-title {
     font-family: "Noto Sans JP";
     font-size: 4.2vw;
+    letter-spacing: 0.4vw;
     font-weight: bold;
     padding-bottom: 1%;
   }
@@ -544,12 +591,13 @@
   .office-text {
     font-family: "Noto Sans JP";
     font-size: 3.8vw;
-    padding-left: 5%;
+    letter-spacing: 0.4vw;
+    padding-left: 6%;
   }
 
   .company-table{
     width: 100%;
-    margin-bottom: 3%;
+    margin-bottom: 8%;
   }
 
   .company-table tr {
@@ -560,18 +608,20 @@
 
   .table-left {
     display:block;
-    width:35%;
+    width:30%;
     font-family: "Noto Sans JP";
-    font-size: 4vw;
+    font-size: 3.8vw;
+    letter-spacing: 0.3vw;
     color: #0F1419;
     border-bottom: 1.5px solid #0F1419;
   }
 
   .table-right {
     display:block;
-    width:65%;
+    width:70%;
     font-family: "Noto Sans JP";
-    font-size: 4vw;
+    font-size: 3.8vw;
+    letter-spacing: 0.3vw;
     padding-left: 2%;
     color: #0F1419;
     border-bottom: 1px solid #0F1419;
@@ -587,26 +637,40 @@
     padding-bottom: 5%;
   }
 
-  #news-menu a {
+  .info-a,
+  .ple-a,
+  .event-a {
+    display: inline-block;
     font-family: "Noto Sans JP";
     font-weight: bold;
-    font-size: 4.2vw;
+    font-size: 4.5vw;
+    letter-spacing: 0.4vw;
     color: #0F1419;
-  }
-
-  #news-menu a:hover,
-  #news-menu a:active {
-    color: #0F1419;
-  }
-
-  #news-menu a:visited,
-  #news-menu a:link {
-    color: #0F1419;
-  }
-
-  .event-a,
-  .ple-a {
     text-decoration: none;
+  }
+
+  .info-a:hover,
+  .event-a:hover,
+  .ple-a:hover {
+    border-bottom: 2px solid #38A1DB;
+    color: #0F1419;
+  }
+
+
+  .info-a:visited,
+  .info-a:active,
+  .info-a:link,
+  .event-a:visited,
+  .event-a:active,
+  .event-a:link,
+  .ple-a:visited,
+  .ple-a:active,
+  .ple-a:link {
+    color: #0F1419;
+  }
+
+  .active {
+    border-bottom: 2px solid #38A1DB;
   }
 
   .news-one {
@@ -621,6 +685,7 @@
     text-decoration: none;
     color: #0F1419;
     display: flex;
+    align-items: flex-end;
   }
 
   .news-one a:hover,
@@ -631,37 +696,20 @@
   }
 
   .news-one-title {
-    width: 60%;
+    width: 70%;
     font-family: "Noto Sans JP";
     font-size: 4vw;
+    letter-spacing: 0.4vw;
     font-weight: bold;
     color: #0F1419;
   }
 
-  .news-one-date-set {
-    width: 40%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin: 0 0 0 auto;
-  }
-
-  .news-one-img {
-    display: inline-block;
-    width: 15%;
-    text-align: right;
-  }
-
-  .news-one-img > img{
-    width: 100%;
-    vertical-align: bottom;
-  }
-
   .news-one-date {
-    width: 70%;
+    width: 30%;
     display: inline-block;
     font-family: "Noto Sans JP";
-    font-size: 3vw;
+    font-size: 2.8vw;
+    letter-spacing: 0.3vw;
     color: #0F1419;
     text-align: right;
   }
@@ -669,7 +717,7 @@
   .news-event {
     display: none;
   }
-  .news-pre-release {
+  .news-press-release {
     display: none;
   }
 
@@ -684,12 +732,14 @@
 
   #privacy h1 {
     font-size: 4.5vw;
+    letter-spacing: 0.4vw;
     font-weight: bold;
     margin: 5% 0;
   }
 
   #privacy h2 {
     font-size: 4vw;
+    letter-spacing: 0.4vw;
     font-weight: bold;
     border-bottom: 2px solid #38A1DB;
     margin: 6% 0;
@@ -697,6 +747,8 @@
 
   #privacy p {
     font-size: 3.5vw;
+    letter-spacing: 0.3vw;
+    line-height: 4vw;
   }
 
   #privacy div {
@@ -705,6 +757,8 @@
   }
   #privacy li {
     font-size: 3.5vw;
+    letter-spacing: 0.3vw;
+    line-height: 4vw;
   }
 
   .end {

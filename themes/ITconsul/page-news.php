@@ -24,9 +24,9 @@
   <div class="page-content content">
     <div class="container">
       <div id="news-menu">
-        <a href="#news-menu" class="ple-a">プレリリース</a>
+        <a href="#news-menu" class="ple-a">プレスリリース</a>
         <a href="#news-menu" class="event-a">イベント</a>
-        <a href="#news-menu" class="info-a">お知らせ</a>
+        <a href="#news-menu" class="info-a active">お知らせ</a>
       </div>
       <div class="news-group">
         <!-- お知らせ -->
@@ -37,7 +37,7 @@
               'category_name' => 'info',
               'posts_per_page' => 10,   // 表示件数
               'post_status' => 'publish',  // 公開済みのみ
-              'orderby' => 'date', //新着順
+              'orderby' => 'modified', //新着順
           );
 
           query_posts($args);
@@ -51,10 +51,7 @@
           <div class="news-one">
             <a href="<?php the_permalink(); ?>">
               <div class="news-one-title"><?php the_title(); /* 記事タイトル */ ?></div>
-              <div class="news-one-date-set">
-                <div class="news-one-img"><img src="<?php echo get_template_directory_uri(); ?>/img/clock-regular.png" alt="時計"></div>
-                <div class="news-one-date"><?php echo get_the_date(); /* 記事投稿日付 */ ?></div>
-              </div>
+              <div class="news-one-date"><?php echo get_the_modified_date(); /* 記事更新日 */ ?></div>
             </a>
           </div>
 
@@ -89,10 +86,7 @@
           <div class="news-one">
             <a href="<?php the_permalink(); ?>">
               <div class="news-one-title"><?php the_title(); /* 記事タイトル */ ?></div>
-              <div class="news-one-date-set">
-                <div class="news-one-img"><img src="<?php echo get_template_directory_uri(); ?>/img/clock-regular.png" alt="時計"></div>
-                <div class="news-one-date"><?php echo get_the_date(); /* 記事投稿日付 */ ?></div>
-              </div>
+              <div class="news-one-date"><?php echo get_the_modified_date(); /* 記事更新日 */ ?></div>
             </a>
           </div>
 
@@ -104,12 +98,12 @@
           wp_reset_query();
           ?>
         </container>
-        <!-- プレリリース -->
-        <container class="news-pre-release">
+        <!-- プレスリリース -->
+        <container class="news-press-release">
           <?php
           $args = array(
               'post_type' => 'post',    // 投稿タイプ
-              'category_name' => 'pre-release',
+              'category_name' => 'press-release',
               'posts_per_page' => 10,   // 表示件数
               'post_status' => 'publish',  // 公開済みのみ
               'orderby' => 'date', //新着順
@@ -126,10 +120,7 @@
           <div class="news-one">
             <a href="<?php the_permalink(); ?>">
               <div class="news-one-title"><?php the_title(); /* 記事タイトル */ ?></div>
-              <div class="news-one-date-set">
-                <div class="news-one-img"><img src="<?php echo get_template_directory_uri(); ?>/img/clock-regular.png" alt="時計"></div>
-                <div class="news-one-date"><?php echo get_the_date(); /* 記事投稿日付 */ ?></div>
-              </div>
+              <div class="news-one-date"><?php echo get_the_modified_date(); /* 記事更新日 */ ?></div>
             </a>
           </div>
 

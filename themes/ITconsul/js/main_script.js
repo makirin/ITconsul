@@ -1,36 +1,30 @@
 jQuery(function() {
 
   // お知らせ入れ替え
-  $('.ple-a').on('mouseover',function(){
-    $('.ple-a').css('text-decoration', 'underline')
-    $('#news-menu a').not('.ple-a').css('text-decoration', 'none'); 
-  });
-
   $('.ple-a').on('click',function(){
-    $('.news-pre-release').css('display', 'block');
-    $('.news-group container').not('.news-pre-release').css('display', 'none');
-  });
-
-  $('.event-a').on('mouseover',function(){
-    $('.event-a').css('text-decoration', 'underline')
-    $('#news-menu a').not('.event-a').css('text-decoration', 'none'); 
+    $('.news-press-release').css('display', 'block');
+    $('.news-group container').not('.news-press-release').css('display', 'none');
+    $('.ple-a').addClass('active')
+    $('.event-a').removeClass('active')
+    $('.info-a').removeClass('active')
   });
 
   $('.event-a').on('click',function(){
     $('.news-event').css('display', 'block');
     $('.news-group container').not('.news-event').css('display', 'none');
-  });
-
-  $('.info-a').on('mouseover',function(){
-    $('.info-a').css('text-decoration', 'underline')
-    $('#news-menu a').not('.info-a').css('text-decoration', 'none'); 
+    $('.event-a').addClass('active')
+    $('.ple-a').removeClass('active')
+    $('.info-a').removeClass('active')
   });
 
   $('.info-a').on('click',function(){
     $('.news-info').css('display', 'block');
     $('.news-group container').not('.news-info').css('display', 'none');
+    $('.info-a').addClass('active')
+    $('.event-a').removeClass('active')
+    $('.ple-a').removeClass('active')
   });
-
+  
   // アニメーション
   $(window).on('load scroll', function() {
     $(".show").each(function() {

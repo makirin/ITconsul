@@ -90,6 +90,7 @@ p {
 
   .title {
     font-size: 2vw;
+    letter-spacing: 0.2vw;
     font-weight: bold;
     text-decoration: none;
     color: #ffffff;
@@ -98,7 +99,7 @@ p {
 
   /* スマホ用ナビを非表示 */
   #nav-sp, #menu-sp {
-    display: none;
+    display: none !important;
   }
 
   .menu-pc {
@@ -106,13 +107,14 @@ p {
     display: flex;
     justify-content: space-between;
     font-size: 1.5vw;
+    letter-spacing: 0.1vw;
     margin: 0 0 0 auto;
   }
 
   .menu-text {
     text-decoration: none;
     color: #ffffff;
-    margin: 2% 0;
+    margin: auto 0;
   }
 
   .menu-text:hover {
@@ -127,9 +129,11 @@ p {
 
   .inquiry-btn {
     font-size: 1.5vw;
+    letter-spacing: 0.1vw;
     color: #0F1419;
     background-color: #f1db1d;
-    padding: 2%;
+    padding: 2% 4%;
+    margin: auto 0;
     box-shadow: 2px 2px #807411;
   }
 
@@ -145,6 +149,10 @@ p {
     color: #0F1419;
   }
 
+  .copy {
+    font-size: 1.2vw;
+  }
+  
   /*********************************
   4 トップページ
   *********************************/
@@ -176,7 +184,8 @@ p {
     position: absolute;
     top: 25%;
     left: 0 ;
-    font-size: 5.9vw;
+    font-size: 5.5vw;
+    letter-spacing: 0.5vw;
     font-weight: bold;
     text-shadow: 2px 1px #ffffff;
   }
@@ -186,7 +195,8 @@ p {
     position: absolute;
     top: 55%;
     left: 0;
-    font-size: 3.2vw;
+    font-size: 3vw;
+    letter-spacing: 0.3vw;
     font-weight: bold;
   }
   /*********************************
@@ -212,16 +222,18 @@ p {
   }
 
   .digital-title {
-    padding-left: 5%;
-    padding-top: 5%;
+    padding-left: 4%;
+    padding-top: 4%;
     font-size: 2vw;
+    letter-spacing: 0.2vw;
     font-weight: bold;
   }
 
   .digital-text {
     font-size: 1.5vw;
+    letter-spacing: 0.1vw;
     line-height: 2.5vw;
-    padding: 3% 5% 2% 9%;
+    padding: 2% 3% 4% 9%;
   }
 
   .nurturing {
@@ -247,16 +259,18 @@ p {
   }
 
   .nurturing-title {
-    padding-left: 5%;
-    padding-top: 5%;
+    padding-left: 4%;
+    padding-top: 4%;
     font-size: 2vw;
+    letter-spacing: 0.2vw;
     font-weight: bold;
   }
 
   .nurturing-text {
     font-size: 1.5vw;
+    letter-spacing: 0.1vw;
     line-height: 2.5vw;
-    padding: 3% 5% 2% 9%;
+    padding: 2% 3% 4% 9%;
   }
 
   /*********************************
@@ -264,7 +278,7 @@ p {
   *********************************/
   .advantage {
     width: 100%;
-    height: 13vw;
+    height: 18vw;
     display: flex;
     overflow: hidden;
   }
@@ -276,7 +290,7 @@ p {
 
   .advantage-num-set {
     position: relative;
-    width: 15%;
+    width: 20%;
   }
 
   .advantage-num-set > img {
@@ -295,12 +309,14 @@ p {
     transform: translate(-50%, -50%);
     white-space: nowrap;
     font-size: 3vw;
+    letter-spacing: 0.3vw;
     font-weight: bold;
     z-index: 20;
   }
 
   .advantage-word span {
-    font-size: 4vw;
+    font-size: 5vw;
+    letter-spacing: 0.5vw;
   }
 
   .advantage-num {
@@ -309,6 +325,7 @@ p {
     top: 4%;
     left: 5%;
     font-size: 2vw;
+    letter-spacing: 0.2vw;
     font-weight: bold;
     z-index: 30;
   }
@@ -335,16 +352,18 @@ p {
   }
 
   .advantage-title {
-    padding-left: 2%;
-    padding-top: 1%;
+    padding-left: 4%;
+    padding-top: 4%;
     font-size: 2vw;
+    letter-spacing: 0.2vw;
     font-weight: bold;
   }
 
   .advantage-text {
     font-size: 1.5vw;
+    letter-spacing: 0.1vw;
     line-height: 2.5vw;
-    padding: 1% 5% 1% 5%;
+    padding: 2% 3% 4% 7%;
   }
 
   /*********************************
@@ -357,9 +376,9 @@ p {
   }
 
   .news-set {
-    width: 27%;
+    width: 25%;
     background-color: #ffffff;
-    padding: 1%;
+    padding: 2% 3%;
     margin-bottom: 5%;
   }
 
@@ -377,12 +396,15 @@ p {
 
   .news-title {
     font-size: 1.8vw;
+    letter-spacing: 0.2vw;
     font-weight: bold;
     padding-bottom: 2%;
   }
 
   .news-text {
     font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    line-height: 2vw;
   }
 
   .news-btn {
@@ -391,9 +413,10 @@ p {
 
   .news-btn a{
     font-size: 1.8vw;
+    letter-spacing: 0.2vw;
     font-weight: bold;
     color: #38A1DB;
-    padding: 1%;
+    padding: 2% 3%;
     background-color: #ffffff;
 
   }
@@ -410,17 +433,18 @@ p {
   *********************************/
   .inquiry {
     text-align: center;
+    padding-bottom: 5%;
   }
 
   .main-inquiry-btn {
-    padding: 1%;
+    display: inline-block;
+    padding: 2% 3%;
     font-size: 2vw;
     font-weight: bold;
     box-shadow: 2px 2px #807411;
   }
 
   .main-inquiry-btn:hover {
-    background-color:#f1db1d;
     transform: translate(2px, 2px);
     box-shadow: none;
   }
@@ -469,8 +493,9 @@ p {
   }
 
   .news-single-title-set {
-    padding: 2%;
+    padding: 4%;
     display: flex;
+    align-items: flex-end;
   }
 
   .news-single-title {
@@ -479,34 +504,18 @@ p {
     font-weight: bold;
   }
 
-  .news-single-date-set {
-    width: 40%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-
-  .news-single-date-img {
-    display: inline-block;
-    width: 15%;
-  }
-
-  .news-single-date-img img {
-    width: 70%;
-    vertical-align: bottom;
-  }
-
   .news-single-date {
     display: inline-block;
-    width: 40%;
+    width: 30%;
     font-size: 1.5vw;
     text-align: right;
   }
 
   .news-single-content {
-    padding: 0 2% 2% 5%;
+    padding: 0 4% 4% 7%;
     font-family: "Noto Sans JP";
-    font-size: 2vw;
+    font-size: 1.8vw;
+    letter-spacing: 0.2vw;
     color: #0F1419;
   }
 
@@ -518,15 +527,16 @@ p {
     display: flex;
     justify-content: space-between;
     font-size: 1.5vw;
+    letter-spacing: 0.1vw;
     margin: 0 0 0 auto;
   }
 
   .footer-menu-text {
-    margin: 1.2% 0;
+    margin: auto 0;
   }
-
+  
   .footer-inquiry-btn {
-    padding: 1.2%;
+    padding: 1% 2%;
   }
 
   footer > p {
@@ -594,6 +604,7 @@ p {
   .title {
     width: 70%;
     font-size: 5vw;
+    letter-spacing: 0.5vw;
     font-weight: bold;
     text-decoration: none;
     color: #ffffff;
@@ -647,6 +658,7 @@ p {
   .menu-set > a {
     line-height: 7VW;
     font-size: 5vw;
+    letter-spacing: 0.5vw;
     padding-right: 3%;
     margin-bottom: 5%;
   }
@@ -679,7 +691,7 @@ p {
     width: 30%;
     background-color: #f1db1d;
     margin: 0 3% 0 auto;
-    padding: 2%;
+    padding: 3% 4%;
     box-shadow: 2px 2px #807411;
     text-align: center;
   }
@@ -731,6 +743,7 @@ p {
     -webkit-transform: translateX(-50%);
     -ms-transform: translate(-50%);
     font-size: 8vw;
+    letter-spacing: 0.8vw;
     font-weight: bold;
     text-align: center;
     text-shadow: 2px 1px #ffffff;
@@ -745,6 +758,8 @@ p {
     -webkit-transform: translateX(-50%);
     -ms-transform: translate(-50%);
     font-size: 5vw;
+    letter-spacing: 0.5vw;
+    line-height: 6vw;
     font-weight: bold;
     text-align: center;
     white-space: nowrap;
@@ -778,7 +793,7 @@ p {
   .digital-text-set {
     width: 100%;
     background-color: #ffffff;
-    margin-top: 50%;
+    margin-top: 55%;
   }
 
   .nurturing-text-set {
@@ -793,12 +808,14 @@ p {
     padding-left: 5%;
     padding-top: 10%;
     font-size: 4.5vw;
+    letter-spacing: 0.4vw;
     font-weight: bold;
   }
 
   .digital-text,
   .nurturing-text {
     font-size: 4vw;
+    letter-spacing: 0.4vw;
     line-height: 5.5vw;
     padding:  3% 3% 5% 8%;
   }
@@ -819,17 +836,19 @@ p {
   }
   .advantage-word-sp {
     position: static;
-    width: 30%;
+    width: 35%;
     color: #ffffff;
     background-color: #38A1DB;
-    font-size: 5vw;
+    font-size: 6vw;
+    letter-spacing: 0.6vw;
     font-weight: bold;
     text-align: center;
-    padding: 2% 5%;
+    padding: 3% 7%;
   }
 
-  .advantage-word span {
-    font-size: 8vw;
+  .advantage-word-sp span {
+    font-size: 9vw;
+    letter-spacing: 1vw;
   }
 
   .advantage-num {
@@ -849,23 +868,25 @@ p {
   }
 
   /* 下からフェードイン */
-.slide-bottom {
-	opacity: 0;
-	transform: translate(0, 20px);
-	transition: all 1s ease-out;
- }
+  .slide-bottom {
+    opacity: 0;
+    transform: translate(0, 20px);
+    transition: all 1s ease-out;
+  }
 
   .advantage-title {
-    padding-left: 5%;
-    padding-top: 1%;
+    padding: 4% 5%;
     font-size: 4.5vw;
+    letter-spacing: 0.5vw;
     font-weight: bold;
+
   }
 
   .advantage-text {
     font-size: 4vw;
+    letter-spacing: 0.4vw;
     line-height: 5.5vw;
-    padding: 3% 5% 3% 8%;
+    padding: 0 5% 4% 10%;
   }
 
   /*********************************
@@ -878,7 +899,7 @@ p {
 
   .news-set {
     background-color: #ffffff;
-    padding: 3%;
+    padding: 4% 5%;
     margin-bottom: 5%;
   }
 
@@ -896,12 +917,15 @@ p {
 
   .news-title {
     font-size: 4.5vw;
+    letter-spacing: 0.4vw;
     font-weight: bold;
-    padding-bottom: 2%;
+    padding-bottom: 3%;
   }
 
   .news-text {
     font-size: 4vw;
+    letter-spacing: 0.4vw;
+    line-height: 4.5vw
   }
 
   .news-btn {
@@ -910,11 +934,11 @@ p {
 
   .news-btn a{
     font-size: 3.8vw;
+    letter-spacing: 0.4vw;
     font-weight: bold;
     color: #38A1DB;
-    padding: 3%;
+    padding: 3% 5%;
     background-color: #ffffff;
-
   }
 
   .news-btn a:hover,
@@ -933,8 +957,9 @@ p {
   }
 
   .main-inquiry-btn {
-    padding: 3%;
+    padding: 3% 5%;
     font-size: 4.5vw;
+    letter-spacing: 0.4vw;
     font-weight: bold;
     box-shadow: 2px 2px #807411;
   }
@@ -942,9 +967,9 @@ p {
   /*********************************
   5. single
   *********************************/
-  .single-content {
+  /* .single-content {
     margin-top: -0.5%;
-  }
+  } */
 
   .single-container {
     width: 90%;
@@ -983,47 +1008,31 @@ p {
   }
 
   .news-single-title-set {
-    padding: 2%;
+    padding: 5%;
     display: flex;
+    align-items: flex-end;
   }
 
   .news-single-title {
-    width: 60%;
-    font-size: 4vw;
+    width: 70%;
+    font-size: 4.3vw;
+    letter-spacing: 0.4vw;
     font-weight: bold;
   }
 
-  .news-single-date-set {
-    width: 40%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin: auto 0 auto auto;
-  }
-
-  .news-single-date-img {
-    display: inline-block;
-    width: 18%;
-    vertical-align: bottom;
-    text-align: right;
-  }
-
-  .news-single-date-img img {
-    width: 100%;
-  }
-
   .news-single-date {
-    width: 65%;
+    width: 30%;
     display: inline-block;
-    font-size: 3vw;
+    font-size: 2.8vw;
+    letter-spacing: 0.3vw;
     text-align: right;
-    padding-bottom: 2%;
   }
 
   .news-single-content {
-    padding: 0 2% 2% 5%;
+    padding: 0 5% 5% 5%;
     font-family: "Noto Sans JP";
-    font-size: 3.8vw;
+    font-size: 4vw;
+    letter-spacing: 0.4vw;
     color: #0F1419;
   }
 
@@ -1031,13 +1040,14 @@ p {
   6. footer
   *********************************/
   .footer_container {
-    width: 95%;
+    width: 90%;
     display: flex;
     margin: 0 auto;
   }
 
   .footer-title {
     font-size: 4.5vw;
+    letter-spacing: 0.4vw;
     color: #ffffff;
     margin: 0 0 auto 0;
   }
@@ -1045,6 +1055,7 @@ p {
   .footer-menu {
     width: 55%;
     font-size: 3.5vw;
+    letter-spacing: 0.3vw;
     margin: 0 0 0 auto;
     display: flex;
     flex-direction: column;
@@ -1070,7 +1081,7 @@ p {
     color: #0F1419;
     background-color: #f1db1d;
     margin: 0 3% 0 auto;
-    padding: 2%;
+    padding: 2% 3%;
     box-shadow: 2px 2px #807411;
     text-align: center;
   }
@@ -1095,6 +1106,3 @@ p {
     padding: 5%;
   }
 }
-/*********************************
-7. アニメーション
-*********************************/

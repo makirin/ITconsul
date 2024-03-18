@@ -8,7 +8,7 @@
         <a class="inquiry-btn footer-inquiry-btn" href="<?php echo home_url(); ?>/inquiry">お問合せ</a>
       </div>
     </div>
-    <p>&copy 2024 IT Consultants, Inc.</p>
+    <p class="copy">&copy 2024 IT Consultants, Inc.</p>
   </footer>
   
   <script src="<?php echo get_template_directory_uri(); ?>/script.js></script>
